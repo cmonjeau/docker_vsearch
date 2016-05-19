@@ -1,5 +1,5 @@
 ############################################################
-# Dockerfile to build vsearch 1.9.3 software
+# Dockerfile to build vsearch 1.11.1 software
 # Based on debian wheezy
 ############################################################
 
@@ -12,8 +12,8 @@ ENV PACKAGES wget make cmake gcc g++
 
 ########################### VSEARCH URLS #############################
 
-ENV VSEARCH_SOURCE https://github.com/torognes/vsearch/releases/download/v1.9.3/vsearch-1.9.3-linux-x86_64.tar.gz
-ENV VSEARCH_DIR vsearch-1.9.3-linux-x86_64
+ENV VSEARCH_SOURCE https://github.com/torognes/vsearch/releases/download/v1.11.1/vsearch-1.11.1-linux-x86_64.tar.gz
+ENV VSEARCH_DIR vsearch-1.11.1-linux-x86_64
 ENV DIR /opt
 
 ################## DEPENDENCIES INSTALLATION ######################
@@ -36,4 +36,3 @@ RUN rm -r ${DIR}/${VSEARCH_DIR}
 ###############################################################
 
 MAINTAINER Monjeaud Cyril <Cyril.Monjeaud@irisa.fr>
-
